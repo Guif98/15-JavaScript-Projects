@@ -1,0 +1,56 @@
+body {
+    background: rgb(113, 147, 148);
+}
+
+.underline {
+    border: 2px solid;
+    color: dodgerblue;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.img-container {
+    width: 600px;
+    height: 700px;
+    background-color:white;
+    margin: 15px auto;
+    margin-bottom: 1.5rem;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+#person-img {
+    width: 200px;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 120px;
+    position: relative;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #2a7a3b;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
