@@ -1,11 +1,24 @@
-var btnMessage = document.getElementById('btnMessage');
+var questions = document.querySelectorAll('.question');
 
+questions.forEach(function(question) {
+    var btn = document.querySelector('.btn-question');
+    btn.addEventListener('click', function(){
+        questions.forEach(function(item) {
+            if(item !== question) {
+                document.querySelector('.message').classList.remove('d-none');
+                btn.innerText = "Close";
+                btn.className = "btn-question btn btn-outline-danger float-end";
+            }
 
-btnMessage.addEventListener('click', function(){
+            document.querySelector('.message').classList.toggle('d-none');
+        });
+    })
+})
+
+/*btnMessage.addEventListener('click', function(){
     if (document.getElementById('message').style.display == "block") {
-        document.getElementById('message').style.display = "none";
-        btnMessage.innerText = "Show";
-        btnMessage.className = "btn btn-outline-success float-end";
+        
+        
         
     } else {
         document.getElementById('message').style.display = "block"
@@ -13,4 +26,4 @@ btnMessage.addEventListener('click', function(){
         btnMessage.className = "btn btn-outline-danger float-end";
     }
     
-});
+});*/
