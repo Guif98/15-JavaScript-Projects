@@ -1,0 +1,18 @@
+.underline {
+    border: 2px solid;
+    color: dodgerblue;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    background-color: white;
+    color:  rgb(214, 165, 2);
+}
+
+.menu-btn:hover {
+    background-color: rgb(214, 165, 2);
+    color: white;
+    font-weight: bold;
+}
