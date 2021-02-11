@@ -9,19 +9,51 @@
     <title>Menu</title>
 </head>
 <body>
-    <section class="menu container mt-5">
+    <!--sidebar-->
+    <nav class="navbar navbar-dark bg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="text-light mx-auto"><h3>Sun Food Restaurant</h3></span>
+    </nav>
+      <aside class="sidebar d-none">
+        <div class="sidebar-header">
+          <img src="logo.svg" class="logo" alt="" />
+          <button class="close-btn btn btn-outline-danger">Close</button>
+        </div>
+        <!-- links -->
+        <ul class="links list-unstyled">
+          <li>
+            <a class="text-decoration-none" href="#">Home</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" href="#">About</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" href="#">Trending Now</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" href="#">Contact</a>
+          </li>
+        </ul>
+      </aside>
+
+
+    <!--End sidebar-->
+
+    <section class="menu mt-5">
         <div class="title mx-auto text-center">
             <h2>Our Menu</h2>
             <div class="underline"></div>
             <div class="mt-5 btn-group">
-                <button type="button" class="btn menu-btn rounded m-2">All</button>
-                <button type="button" class="btn menu-btn rounded m-2">Breakfast</button>
-                <button type="button" class="btn menu-btn rounded m-2">Lunch</button>
-                <button type="button" class="btn menu-btn rounded m-2">Shakes</button>
-            </div>
+            <!--    <button type="button" class="btn filter-btn rounded m-2">All</button>
+                <button type="button" class="btn filter-btn rounded m-2">Breakfast</button>
+                <button type="button" class="btn filter-btn rounded m-2">Lunch</button>
+                <button type="button" class="btn filter-btn rounded m-2">Shakes</button> -->
+            </div> 
         </div>
 
-        <div class="section-center mx-auto mt-5 text-center">
+        <div class="section-center d-flex flex-row flex-wrap mx-auto mt-5 text-center">
 
             <article class="menu-item">
                 <img class="w-50 shadow photo" style="border: 4px solid rgb(156, 115, 0);"  src="images/pancake.png" alt="">
