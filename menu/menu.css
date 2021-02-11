@@ -8,8 +8,7 @@
 }
 
 .filter-btn {
-    background-color: white;
-    color:  rgb(214, 165, 2);
+    border: 2px solid rgb(214, 165, 2);
 }
 
 .filter-btn:hover {
